@@ -5,10 +5,16 @@ let hour = date.getHours(),
   minute = date.getMinutes(),
   second = date.getSeconds();
 
-if (hour > 12) {
-  hour = hour - 12 + ' PM';
-}
+var prepend = hour >= 12 ? ' PM ' : ' AM ';
+hour = hour >= 12 ? hour - 12 : hour;
 
+if (hour === Number('00')) {
+  hour = 12 + prepend;
+} else if (hour >= 12) {
+  hour - 12 + prepend;
+} else {
+  hour + prepend;
+}
 let todayTime = hour + ' : ' + minute + ' : ' + second;
 console.log('Today is :', day);
 console.log('Current Time is :', todayTime);
