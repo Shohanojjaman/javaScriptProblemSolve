@@ -1,3 +1,10 @@
+/*
+Problem:
+Write a JavaScript program to get the current date.  
+Expected Output :
+mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+*/
+
 const date = new Date();
 let dd = date.getDate(),
   mm = date.getMonth() + 1,
