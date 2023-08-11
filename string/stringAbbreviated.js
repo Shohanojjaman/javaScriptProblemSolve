@@ -1,8 +1,8 @@
 /** Problem:
  *  Write a JavaScript function to convert a string into abbreviated form.
  *
- * Test Data: console.log(abbrev_name("Robin Singh"));
- * Output: "Robin S."
+ * Test Data: console.log(stringAbbreviation('Shohanojjaman Emon'));
+ * Output: "Shohanojjman E."
  */
 
 /** Solution
